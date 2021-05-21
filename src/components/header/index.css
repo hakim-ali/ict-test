@@ -1,0 +1,44 @@
+.app-header {
+  height: 80px;
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.title {
+  align-self: flex-start;
+  color: white;
+  padding: 0px 25px;
+}
+
+.category {
+  align-self: flex-end;
+  padding: 25px;
+}
+
+.container {
+  width: 100%;
+  background-color: #0e0e0e;
+  margin: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-header {
+    height: 120px;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .category,
+  .title {
+    padding: 0px;
+  }
+}

@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# ICT FE Developer Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The main objective of this challenge is to test your FE skills
 
-## Available Scripts
+* Knowledge in JS and React
+* UI/UX skills
+* Your coding style
+* Tests
 
-In the project directory, you can run:
 
-### `yarn start`
+## Rules
+* Your code should be made available in a **private** repository on your personal Github.
+* The test should not take more than 3 hours to complete. 
+* Ideally, you can deliver the challenge within one week. But if you need more time, let us know 😊
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Description
+You will implement the Page below. 
 
-### `yarn test`
+<img src="src/assets/screen_a.jpg" width="800" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It's important to point out that this is just a prototype and does not need to be pixle-perfect. 😊
 
-### `yarn build`
+**Required**
+* Countdown: The time to start has to tick down every second
+* Possibility to filter the items based on category
+* Test your code
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Bonus**
+* Synchronize the countdowns to tick at the same time
+* Visual optimizations
+* Responsive
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## About the "API"
+In order to save time, we provide a helpers file `src/helpers.js`. This file exposes 3 functions:
 
-### `yarn eject`
+1. **fetchCategories** returns `Promise<Category[]>`
+2. **fetchCountdowns** returns `Promise<Countdown[]>`
+3. **getImageSrc** takes `image` as argument and returns image `src`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Data Structure**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+type Category = {
+  id: number
+  name: string
+}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+type Countdown = {
+  id: number
+  categoryId: number
+  title: string 
+  image: string
+  startsAt: string // UTC string 
+}
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Instructions
 
-## Learn More
+* Install dependencies: `npm install`
+* Start: `npm start`
+* Test: `npm test`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+After finishing the Challenge you could provide repo access to:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[@Front End ICT](https://github.com/orgs/ICT-Scandinavia/teams/front-end-ict)
 
-### Code Splitting
+Then send an email to <a href="mailto:dev@impactct.com">dev@impactct.com</a>, with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Title: [ICT FE Test] Your name;
+* Repository link with your test.
+* Information about you: Github, LinkedIn or anything else you consider important.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good Luck!
